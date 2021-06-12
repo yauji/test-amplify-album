@@ -18,7 +18,7 @@
       "function": {
         "amplifyvuealbum0139826a": {
           "deploymentBucketName": "amplify-amplifyvuealbum-dev-61045-deployment",
-          "s3Key": "amplify-builds/amplifyvuealbum0139826a-59354f42727348456e38-build.zip"
+          "s3Key": "amplify-builds/amplifyvuealbum0139826a-39597a6a753570524739-build.zip"
         }
       }
     }

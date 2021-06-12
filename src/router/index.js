@@ -9,6 +9,9 @@ import AlbumEdit from "../views/album/Edit.vue";
 import AlbumShow from "../views/album/Show.vue";
 import PhotoCreate from "../views/photo/Create.vue"
 
+import Home from "../views/Home.vue";
+
+
 //import Home from '../views/Home.vue'
 
 const routes = [
@@ -20,6 +23,12 @@ const routes = [
     path: "/signin",
     name: "SignIn",
     component: SignIn,
+  },
+  {
+    path: "/rest",
+    name: "Home",
+    component: Home,
+    meta: { requireAuth: true },
   },
   {
     path: "/albums",

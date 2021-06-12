@@ -139,6 +139,38 @@
         }
       }
     },
+    "apiapi60f15dea": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-amplifyvuealbum-dev-61045-deployment/amplify-cfn-templates/api/api60f15dea-cloudformation-template.json",
+        "Parameters": {
+          "functionamplifyvuealbum0139826aName": {
+            "Fn::GetAtt": [
+              "functionamplifyvuealbum0139826a",
+              "Outputs.Name"
+            ]
+          },
+          "functionamplifyvuealbum0139826aArn": {
+            "Fn::GetAtt": [
+              "functionamplifyvuealbum0139826a",
+              "Outputs.Arn"
+            ]
+          },
+          "env": "dev"
+        }
+      }
+    },
+    "functionamplifyvuealbum0139826a": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-amplifyvuealbum-dev-61045-deployment/amplify-cfn-templates/function/amplifyvuealbum0139826a-cloudformation-template.json",
+        "Parameters": {
+          "deploymentBucketName": "amplify-amplifyvuealbum-dev-61045-deployment",
+          "s3Key": "amplify-builds/amplifyvuealbum0139826a-59354f42727348456e38-build.zip",
+          "env": "dev"
+        }
+      }
+    },
     "UpdateRolesWithIDPFunction": {
       "DependsOn": [
         "AuthRole",

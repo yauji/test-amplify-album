@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "amplifyvuealbumc0e10ab8": {}
+      },
+      "function": {
+        "amplifyvuealbum0139826a": {
+          "deploymentBucketName": "amplify-amplifyvuealbum-dev-61045-deployment",
+          "s3Key": "amplify-builds/amplifyvuealbum0139826a-59354f42727348456e38-build.zip"
+        }
       }
     }
   }

@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/items",
+      "lambdaFunction": "amplifyvuealbum0139826a",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/items"
+    }
+  ],
+  "resourceName": "api60f15dea",
+  "apiName": "api60f15dea",
+  "functionArns": [
+    {
+      "lambdaFunction": "amplifyvuealbum0139826a"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-amplifyvuealbum-dev-61045-authRole",
+    "unAuthRoleName": "amplify-amplifyvuealbum-dev-61045-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "amplifyvuealbum0139826a",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}

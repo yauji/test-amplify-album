@@ -1,6 +1,31 @@
 <template>
   <div>
     <h1>アルバム一覧</h1>
+
+
+aa
+<div class="dropdown">
+    <button
+      id="dropdownMenuButton1"
+      class="btn btn-secondary dropdown-toggle"
+      type="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      Check Bootstrap
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li>
+        <a class="dropdown-item" href="#">Action</a>
+      </li>
+      <li>
+        <a class="dropdown-item" href="#">Another action</a>
+      </li>
+      <li>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </li>
+    </ul>
+  </div>    
     
     <router-link custom v-slot="{ navigate }" :to="{ name: 'AlbumCreate' }">
       <button @click="navigate">Add Album</button>
@@ -8,6 +33,8 @@
     <table border="1">
       <tr v-for="(album, index) in albums" :key="album.id">
         <td>{{ album.name }}</td>
+        <td>{{ album.date }}</td>
+        <td>{{ album.principalCurrency }}</td>
         <td>
           <router-link
             custom

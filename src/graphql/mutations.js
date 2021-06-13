@@ -9,6 +9,8 @@ export const createAlbum = /* GraphQL */ `
     createAlbum(input: $input, condition: $condition) {
       id
       name
+      date
+      principalCurrency
       photos {
         items {
           id
@@ -34,6 +36,8 @@ export const updateAlbum = /* GraphQL */ `
     updateAlbum(input: $input, condition: $condition) {
       id
       name
+      date
+      principalCurrency
       photos {
         items {
           id
@@ -59,6 +63,8 @@ export const deleteAlbum = /* GraphQL */ `
     deleteAlbum(input: $input, condition: $condition) {
       id
       name
+      date
+      principalCurrency
       photos {
         items {
           id
@@ -88,6 +94,8 @@ export const createPhoto = /* GraphQL */ `
       album {
         id
         name
+        date
+        principalCurrency
         photos {
           nextToken
         }
@@ -113,6 +121,8 @@ export const updatePhoto = /* GraphQL */ `
       album {
         id
         name
+        date
+        principalCurrency
         photos {
           nextToken
         }
@@ -138,6 +148,8 @@ export const deletePhoto = /* GraphQL */ `
       album {
         id
         name
+        date
+        principalCurrency
         photos {
           nextToken
         }

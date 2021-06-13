@@ -134,7 +134,7 @@
             ]
           },
           "S3DeploymentBucket": "amplify-amplifyvuealbum-dev-61045-deployment",
-          "S3DeploymentRootKey": "amplify-appsync-files/1b440da16569c294f89068026de59b434a22319b",
+          "S3DeploymentRootKey": "amplify-appsync-files/220423143cd5327f5b856ee6b5c00e06b693f92c",
           "env": "dev"
         }
       }

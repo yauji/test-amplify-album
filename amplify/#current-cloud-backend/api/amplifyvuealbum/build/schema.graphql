@@ -1,6 +1,16 @@
+enum Currency {
+  JPY
+  USD
+  AUD
+  EUR
+  NZD
+}
+
 type Album {
   id: ID!
-  name: String!
+  name: String
+  date: String!
+  principalCurrency: Currency!
   photos(filter: ModelPhotoFilterInput, sortDirection: ModelSortDirection, limit: Int, nextToken: String): ModelPhotoConnection
   createdAt: AWSDateTime!
   updatedAt: AWSDateTime!
@@ -100,9 +110,16 @@ input ModelSizeInput {
   between: [Int]
 }
 
+input ModelCurrencyInput {
+  eq: Currency
+  ne: Currency
+}
+
 input ModelAlbumFilterInput {
   id: ModelIDInput
   name: ModelStringInput
+  date: ModelStringInput
+  principalCurrency: ModelCurrencyInput
   and: [ModelAlbumFilterInput]
   or: [ModelAlbumFilterInput]
   not: ModelAlbumFilterInput
@@ -130,12 +147,16 @@ type Query {
 
 input CreateAlbumInput {
   id: ID
-  name: String!
+  name: String
+  date: String!
+  principalCurrency: Currency!
 }
 
 input UpdateAlbumInput {
   id: ID!
   name: String
+  date: String
+  principalCurrency: Currency
 }
 
 input DeleteAlbumInput {
@@ -153,6 +174,8 @@ type Mutation {
 
 input ModelAlbumConditionInput {
   name: ModelStringInput
+  date: ModelStringInput
+  principalCurrency: ModelCurrencyInput
   and: [ModelAlbumConditionInput]
   or: [ModelAlbumConditionInput]
   not: ModelAlbumConditionInput

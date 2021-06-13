@@ -23,7 +23,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyvuealbum-dev-61045-deployment/amplify-cfn-templates/auth/amplifyvuealbumc0e10ab8-cloudformation-template.yml",
         "logicalId": "authamplifyvuealbumc0e10ab8"
       },
-      "lastPushTimeStamp": "2021-06-12T20:02:23.301Z",
+      "lastPushTimeStamp": "2021-06-12T21:27:23.328Z",
       "output": {
         "UserPoolId": "ap-northeast-1_qfMnBYmdK",
         "AppClientIDWeb": "3r1hcmlbqpb9oi9tejpivp1ive",
@@ -57,8 +57,8 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyvuealbum-dev-61045-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apiamplifyvuealbum"
       },
-      "lastPushTimeStamp": "2021-06-12T20:02:23.303Z",
-      "lastPushDirHash": "EJLEgYZsNnnN5WzoX2f1HnKnZRQ="
+      "lastPushTimeStamp": "2021-06-12T21:27:29.774Z",
+      "lastPushDirHash": "z+tZlMKU3aOiJug9bgbU/bpALoE="
     },
     "api60f15dea": {
       "service": "API Gateway",
@@ -77,7 +77,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyvuealbum-dev-61045-deployment/amplify-cfn-templates/api/api60f15dea-cloudformation-template.json",
         "logicalId": "apiapi60f15dea"
       },
-      "lastPushTimeStamp": "2021-06-12T20:02:23.305Z",
+      "lastPushTimeStamp": "2021-06-12T21:27:23.337Z",
       "output": {
         "ApiName": "api60f15dea",
         "RootUrl": "https://1oifsy5t65.execute-api.ap-northeast-1.amazonaws.com/dev",
@@ -99,7 +99,7 @@
       "providerPlugin": "awscloudformation",
       "service": "Lambda",
       "dependsOn": [],
-      "lastPushTimeStamp": "2021-06-12T20:02:23.313Z",
+      "lastPushTimeStamp": "2021-06-12T21:27:23.338Z",
       "lastBuildTimeStamp": "2021-06-12T20:01:20.295Z",
       "lastPackageTimeStamp": "2021-06-12T20:01:20.330Z",
       "distZipFilename": "amplifyvuealbum0139826a-39597a6a753570524739-build.zip",

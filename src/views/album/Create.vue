@@ -19,11 +19,20 @@ export default {
     return {
       form: {
         name: "",
+        date:"",
+        principalCurrency: "",
       },
     };
   },
   methods: {
     async submitCreate() {
+
+      let d = new Date();
+      console.log(d.toISOString());
+      this.form.date = d.toISOString();
+
+      this.form.principalCurrency = "AUD";
+
       await API.graphql({
         query: createAlbum,
         variables: { input: this.form },

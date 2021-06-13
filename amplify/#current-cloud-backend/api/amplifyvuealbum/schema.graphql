@@ -1,8 +1,18 @@
+
+enum Currency {
+  JPY
+  USD
+  AUD
+  EUR
+  NZD
+}
 type Album 
   @model 
   @auth(rules: [{ allow: owner }]) {
   id: ID!
-  name: String!
+  name: String
+  date: String!
+  principalCurrency:Currency!
   photos: [Photo] @connection(keyName: "byAlbum", fields: ["id"])
 }
 
